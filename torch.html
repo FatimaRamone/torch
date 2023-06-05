@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verificación de la Linterna</title>
+</head>
+<body>
+  <p id="resultado">Comprobando disponibilidad de la linterna...</p>
+
+  <script>
+    // Verificar si el navegador admite la API de la linterna
+    if ('torch' in navigator) {
+      document.getElementById('resultado').textContent = 'La linterna está disponible.';
+    } else {
+      document.getElementById('resultado').textContent = 'La linterna no está disponible.';
+    }
+  </script>
+</body>
+</html>
